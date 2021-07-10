@@ -31,3 +31,11 @@ We use the script `eval.py` is to evaluate a trained model, using the root mean 
 Example: `python ./eval.py --batch_size=8`
 
 ### Depth Image Prediction
+
+The script `predict.py` will use a trained model to predict a depth image from an RGB color image. Prior to invoking the prediction script, the trained model should be copied to `models/model.h5`.
+
+Example: `python ./predict.py --color_input=rgb_input.png --depth_output=predicted_depth.png`
+
+Optionally, the command-line switch `--visualize_result` can be used to show a side-by-side comparison of input (RGB) and predicted output (DEPTH):
+
+![depth_prediction](media/depth_prediction.jpg)
