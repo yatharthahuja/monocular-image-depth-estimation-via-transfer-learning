@@ -1,0 +1,6 @@
+tensorflow
+pillow
+scikit-learn
+scikit-image
+pydot
+PyQt5
